@@ -1,0 +1,19 @@
+.information-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .information-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  

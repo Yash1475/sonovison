@@ -1,0 +1,3 @@
+<h1>
+Endoscopic Ultrasound (EUS) is an advanced medical imaging technique that combines endoscopy and ultrasound to obtain detailed images of the digestive tract, surrounding organs, and tissues. It is widely used for diagnostic and therapeutic purposes, particularly in gastrointestinal (GI) diseases and cancer staging.An endoscopic ultrasound (EUS) is a minimally invasive procedure that uses sound waves and a camera to examine the digestive tract and nearby organs. It can help diagnose and treat conditions such as pancreatitis, tumors, and gallstones. 
+</h1>

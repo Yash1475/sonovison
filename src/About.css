@@ -1,0 +1,228 @@
+/* About.css */
+.about-us {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+     url('https://marketing.webassets.siemens-healthineers.com/200929515b85846a/221ca544583c/v/e3732f7bf7ba/transducers-link-07395314_8.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: bgAnimation 15s infinite alternate; /* Background animation */
+}
+
+/* Background animation */
+@keyframes bgAnimation {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
+}
+
+/* Gradient overlay on background */
+.about-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+/* Intro Section */
+.about-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1.5px;
+}
+
+.about-intro h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffcc00, #ff9e00);
+    background-clip: text;
+    color: transparent;
+    animation: gradientText 3s ease-in-out infinite alternate;
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    opacity: 0.8;
+}
+
+/* Mission Section */
+.mission {
+    background-color: rgba(0, 123, 255, 0.8);
+    padding: 60px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+    transform: translateY(20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.mission h2 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mission p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f5f5f5;
+    font-weight: 300;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team h2 {
+    font-size: 2.8rem;
+    color: #ffcc00;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1.5px;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+    margin-left: 18%;
+}
+
+/* Team Member */
+.team-member {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.team-member h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.team-member:hover h3 {
+    color: #ffcc00;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #777;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.team-member:hover p {
+    color: #555;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-intro h1 {
+        font-size: 3rem;
+    }
+
+    .about-intro p {
+        font-size: 1rem;
+    }
+
+    .mission {
+        padding: 40px;
+    }
+
+    .team-members {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}

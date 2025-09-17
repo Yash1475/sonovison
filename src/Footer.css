@@ -1,0 +1,28 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  padding: 15px 0; /* Reduced padding for a medium footer size */
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1000px; /* Adjusted width for a more compact footer */
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 8px; /* Less space between copyright and links */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 12px; /* Spaced the links a bit more evenly */
+  font-size: 0.9rem; /* Reduced font size for a medium footer */
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
